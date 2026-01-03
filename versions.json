@@ -1,0 +1,68 @@
+{
+  "manifest_version": "1.0",
+  "updated_at": "2026-01-03T20:00:00Z",
+  
+  "launcher": {
+    "version": "1.0.0",
+    "min_version": "1.0.0"
+  },
+  
+  "app": {
+    "version": "1.0.0",
+    "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.0/vautiq-app-1.0.0.zip",
+    "size_mb": 50,
+    "changelog": "Initial release"
+  },
+  
+  "packages": [
+    {
+      "id": "coach",
+      "name": "Business Coach",
+      "description": "Document types for coaches, consultants and trainers",
+      "version": "1.0.0",
+      "required": false,
+      "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.0/coach-1.0.0.zip",
+      "size_mb": 0.01,
+      "doc_types_count": 9
+    },
+    {
+      "id": "apotheke",
+      "name": "Apotheken-Paket",
+      "description": "Document types for pharmacies",
+      "version": "1.0.0",
+      "required": false,
+      "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.0/apotheke-1.0.0.zip",
+      "size_mb": 0.01,
+      "doc_types_count": 8,
+      "coming_soon": true
+    }
+  ],
+  
+  "llm_models": [
+    {
+      "id": "mistral",
+      "name": "Mistral 7B",
+      "ollama_name": "mistral",
+      "size_gb": 4.1,
+      "ram_required": 8,
+      "description": "Best balance of quality and speed",
+      "recommended": true
+    },
+    {
+      "id": "phi3",
+      "name": "Phi-3 Mini",
+      "ollama_name": "phi3",
+      "size_gb": 2.4,
+      "ram_required": 4,
+      "description": "Fast and compact for older hardware"
+    },
+    {
+      "id": "llama3.1",
+      "name": "Llama 3.1 8B",
+      "ollama_name": "llama3.1",
+      "size_gb": 4.7,
+      "ram_required": 16,
+      "description": "Highest quality, newest model"
+    }
+  ]
+}
