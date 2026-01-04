@@ -1,27 +1,39 @@
 {
   "manifest_version": "1.0",
-  "updated_at": "2026-01-03T20:00:00Z",
+  "updated_at": "2026-01-04T18:30:00Z",
   
   "launcher": {
     "version": "1.0.0",
-    "min_version": "1.0.0"
+    "min_version": "1.0.0",
+    "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.1/VAUTIQ_Setup.1.0.0.exe",
+    "size_mb": 73
   },
   
   "app": {
     "version": "1.0.0",
-    "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.0/vautiq-app-1.0.0.zip",
-    "size_mb": 50,
+    "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.1/VAUTIQ-Setup-0.1.0.exe",
+    "size_mb": 225,
     "changelog": "Initial release"
   },
   
   "packages": [
+    {
+      "id": "base",
+      "name": "Basis-Paket",
+      "description": "Grundlegende Dokumenttypen für den Alltag - Rechnungen, Verträge, Quittungen und mehr.",
+      "version": "1.0.0",
+      "required": true,
+      "bundled": true,
+      "size_mb": 0.1,
+      "doc_types_count": 8
+    },
     {
       "id": "coach",
       "name": "Business Coach",
       "description": "Document types for coaches, consultants and trainers",
       "version": "1.0.0",
       "required": false,
-      "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.0/coach-1.0.0.zip",
+      "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.1/coach-1.0.0.zip",
       "size_mb": 0.01,
       "doc_types_count": 9
     },
@@ -31,8 +43,7 @@
       "description": "Document types for pharmacies",
       "version": "1.0.0",
       "required": false,
-      "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.0/apotheke-1.0.0.zip",
-      "size_mb": 0.01,
+      "size_mb": 0.1,
       "doc_types_count": 8,
       "coming_soon": true
     }
@@ -54,7 +65,8 @@
       "ollama_name": "phi3",
       "size_gb": 2.4,
       "ram_required": 4,
-      "description": "Fast and compact for older hardware"
+      "description": "Fast and compact for older hardware",
+      "recommended": false
     },
     {
       "id": "llama3.1",
@@ -62,7 +74,15 @@
       "ollama_name": "llama3.1",
       "size_gb": 4.7,
       "ram_required": 16,
-      "description": "Highest quality, newest model"
+      "description": "Highest quality, newest model",
+      "recommended": false
     }
-  ]
+  ],
+  
+  "requirements": {
+    "min_ram_gb": 4,
+    "recommended_ram_gb": 8,
+    "os": ["windows10", "windows11"],
+    "ollama_required": true
+  }
 }
