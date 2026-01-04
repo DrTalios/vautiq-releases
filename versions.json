@@ -11,8 +11,8 @@
   
   "app": {
     "version": "1.0.0",
-    "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.1/VAUTIQ-Setup-0.1.0.exe",
-    "size_mb": 225,
+    "download_url": "https://github.com/DrTalios/vautiq-releases/releases/download/v1.0.1/VAUTIQ-App-1.0.0.zip",
+    "size_mb": 325,
     "changelog": "Initial release"
   },
   
